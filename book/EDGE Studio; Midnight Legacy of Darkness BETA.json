@@ -1,0 +1,853 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MidnightLegacyofDarkness",
+				"abbreviation": "MNLOD",
+				"full": "Midnight: Legacy of Darkness",
+				"url": "https://www.edge-studio.net/games/midnight/",
+				"authors": [
+					"EDGE Studio"
+				],
+				"convertedBy": [
+					"Omega9999"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Orc Legion Soldier",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"source": "MidnightLegacyofDarkness",
+			"alignment": [
+				{
+					"alignment": [
+						"L",
+						"E"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item hide armor|phb},{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 6",
+				"average": 15
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 16,
+			"int": 10,
+			"wis": 11,
+			"cha": 9,
+			"passive": 10,
+			"cr": "1/2",
+			"page": 335,
+			"senses": [
+				"Darkvision 60 ft.,"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Orcish",
+				"Shadow Tongue",
+				"Erenlander",
+				"Norther"
+			],
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+1"
+			},
+			"action": [
+				{
+					"name": "Vardatch",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage in melee, or 6 ({@damage 1d6 + 3}) piercing damage at range."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"fluff": {
+				"entries": [
+					"The orc legionaries are brutal warriors and hardened fighters. Even after 100 years of conquest, they still make up the core of Izrador’s armies. Each orc legionary is well-equipped for war, with a spear, shield, and heavy vardatch. They train to fight in ranks, though they are also dangerous combatants on their own. Typically, orcs deploy in cohorts of roughly 100 legionaries (or 10 spears). The cohorts fight in rectangular formations, with half their spears forward and half waiting a few yards behind, ready to be thrown into the fight."
+				]
+			},
+			"isNpc": true
+		},
+		{
+			"name": "Orc Legion Murach",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"source": "MidnightLegacyofDarkness",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item hide armor|phb}, {@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"cr": "2",
+			"page": 334,
+			"shortName": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Orcish",
+				"Shadow Tongue",
+				"Erenlander",
+				"Norther"
+			],
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+3"
+			},
+			"action": [
+				{
+					"name": "Charge! (recharge short/long rest)",
+					"entries": [
+						"The murach chooses any number of legion orcs within 30 feet who can hear it. Until the end of each affected legion orc’s next turn, it can use its bonus action to move up to its speed toward a hostile creature. The murach can then move up to its speed and make one melee attack as a bonus action."
+					]
+				},
+				{
+					"name": "Phalanx! (recharge short/long rest)",
+					"entries": [
+						"The murach chooses any number of legion orcs within 30 feet who can hear it.  Each affected orc can spend its reaction to immediately move up to 20 feet toward another friendly legion orc it can see. The murach can then move up to its speed toward another friendly legion orc. For one minute, all friendly legion orc within 5 feet of another affected legion orc increase their AC by 2 as long as they remain within 5 feet of another friendly legion orc."
+					]
+				},
+				{
+					"name": "Vardatch",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"A murach, or “sergeant,” commands a spear of ten soldiers. Murachs are expected to be dangerous and hardened veterans, and if they show any signs of weaknesses, legion culture expects one of their soldiers to challenge them for command.",
+					"Murachs do not concern themselves overmuch with strategy. Instead, their job is to get their spear into the  fight, and then overcome the enemies in front of them. They’re at the forefront of every charge, and they make sure that each of their soldiers is right behind them."
+				]
+			}
+		},
+		{
+			"name": "Orc Legion Vargon",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "MidnightLegacyofDarkness",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item scale mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 40",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 12,
+			"wis": 12,
+			"cha": 15,
+			"passive": 14,
+			"cr": "5",
+			"shortName": true,
+			"page": 335,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Orcish",
+				"Shadow Tongue",
+				"Erenlander",
+				"Norther"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+5",
+				"perception": "+4"
+			},
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The vargon has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Legion Tactics",
+					"entries": [
+						"While within 30 feet of the vargon and within 5 feet of at least one other legion orc, legion orcs gain advantage on melee attack rolls."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The vargon adds 3 to its AC against one melee attack that would hit it. To do so, the vargon must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vargon may attack twice with its vardatch and once with its shield."
+					]
+				},
+				{
+					"name": "War Cry (1/day)",
+					"entries": [
+						"The vargon chooses any number of legion orcs within 30 feet who can hear it. Each affected legion orc gains advantage on Intelligence, Wisdom, and Charisma saving throws until the start of its next turn. The vargon can then make one attack as a bonus action."
+					]
+				},
+				{
+					"name": "Vardatch",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Shield",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"fluff": {
+				"entries": [
+					"Each legion cohort is commanded by a vargon. These are champions who are expected to be the most dangerous fighter amongst a hundred battle-hardened orcs, and also have a solid grasp of legion tactics. A vargon is always in the thick of the fighting to inspire their soldiers, who view the exploits of their champion with a mixture of awe and jealousy."
+				]
+			}
+		}
+	],
+	"spell": [
+		{
+			"name": "Bind/Banish Astirax",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 200
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You can detect any astirax within 200 feet of you, its form appearing as a flickering black shadow that only you can perceive. During your turn, if you are within 10 feet of an astirax, you can use your action to attempt to bind or banish it. The astirax must make a Wisdom saving throw.",
+				"If it fails and you were attempting to bind it, the astirax must obey your commands for one year and a day. At the end of that year, you may perform this ritual again to keep the astirax bound. If you do, the astirax suffers disadvantage on its Wisdom saving throw.",
+				"If it fails and you were attempting to banish it, the astirax takes {@damage 4d12} radiant damage. If it is currently possessing an animal, it has advantage on its Wisdom saving throw.",
+				"If you fail to bind an astirax three times in a 24-hour period, the astirax can no longer be bound by you for one year and a day."
+			],
+			"source": "MidnightLegacyofDarkness",
+			"page": 104,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an obsidian bead for binding, a bracelet made of silver for banishing)"
+			},
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Disguise Ally",
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You make one willing creature within 100 feet look different until the spell ends, it moves more than 100  feet away from you, or you use your action to dismiss it. You alter the appearance of the creature's clothing, armor, weapons, and other belongings on its person. It can appear 1 foot shorter or taller, and it can appear thin, fat, or in between. You can't change its body type, so it must adopt a form with the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.",
+				"The changes wrought by this spell fail to hold up to physical inspection. For example, if you gave the creature a heavy cloak, anyone who tried to touch it would see their hand pass right through it. If you made a person appear shorter than they really are, someone who swung a fist at their head would still injure them, even though it looked like the fist hit open air.",
+				"To see through the disguise, another creature can use its action to inspect their appearance and must succeed on an Intelligence (Investigation) check against your spell save DC."
+			],
+			"source": "MidnightLegacyofDarkness",
+			"page": 104,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can affect one aditional willing creature for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Greenshield",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 12,
+						"upTo": true
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell may only be cast in a natural setting with some plant life. When the spell is cast, the local flora grow and swell up to form a spherical shield with a 20-foot radius centered on the spellcaster. The branches and vines that make up the shield spread apart to allow you and your allies to press through, but they remain a twisted knot of dense undergrowth for anyone else.",
+				"The shield looks like impassibly dense but otherwise natural undergrowth, although a creature may use an action to inspect it to determine if it is an unnatural creation. To determine this, it must succeed on an Intelligence (Investigation) check against your spell save DC. If you are in a location with abundant natural flora, such as a thick forest, the creature suffers disadvantage on its check. In addition, all magical auras of objects or creatures cannot be detected by anything outside the shield while those objects or creatures remain within the shield.",
+				"The shield does not stop sounds or smells from entering or leaving."
+			],
+			"source": "MidnightLegacyofDarkness",
+			"page": 104,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a twig and a blade of grass"
+			}
+		},
+		{
+			"name": "Heed the Whisper",
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8,
+						"upTo": true
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell can only be cast while within 1 mile of the Great Forest of Erethor. If you move outside of this range, the spell ends. While this spell is active, you are aware of the presence of all creatures within 300 feet of you and cannot be surprised. If you are asleep and a hostile creature moves within 300 feet of you, you are immediately awakened by a faint but urgent whisper in the back of your mind."
+			],
+			"source": "MidnightLegacyofDarkness",
+			"page": 105,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you may choose a single point within the Great Forest of Erethor that you have visited. While this spell is active, you are aware of the presence of all creatures within 300 feet of that point instead."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lifetrap",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell causes the plants in the area of effect to rise up and entangle a single creature within range. At the end of the spell’s duration, the plants release their life force into the creature; if the target is undead, this energy can shatter the bond between spirit and flesh.",
+				"The target must succeed on a Strength saving throw or be {@condition restrained} until the spell ends. A creature {@condition restrained} by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.",
+				"You can end the spell as a bonus action. When you end the spell, if the target is undead and is still {@condition restrained}, it suffers {@damage 1d12} radiant damage for each turn it remained {@condition restrained}."
+			],
+			"source": "MidnightLegacyofDarkness",
+			"page": 105,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"restrained"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"en you cast this spell using a spell slot of 2nd level or higher, you may affect one additional creature for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Nature’s Revelation",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell causes all plants and animals in the area to pinpoint the location of all hidden or {@condition invisible} creatures in the area of effect. Tree limbs point, vines pull back bushes, and animals seem to stare intently at the hiding creatures. The effect exists in a 120-foot-radius sphere centered on the spellcaster.",
+				"While within the affected area, creatures lose any benefits of cover. In addition, you know of the presence and location of any {@condition invisible} creatures. You can designate up to six creatures who are unaffected by the spell."
+			],
+			"source": "MidnightLegacyofDarkness",
+			"page": 105,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can increase the radius of the spell by 10 feet per level above 2nd."
+					]
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Silver Blood",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"In a desperate move, you infuse your own blood with the elemental properties of silver, making it a potent weapon against spirits and some undead. For the duration of this spell, you can choose to draw your own blood, suffering {@damage 1d4} damage and creating one of the following effects:",
+				"-Coat up to ten pieces of ammunition or one melee weapon with your blood. This ammunition or weapon counts as silvered for 1 hour.",
+				"-With your blood, draw a warding line up to 2 feet long; it remains active for 1 hour. Any creature that is adversely affected by silver (such as a creature that has vulnerability to silvered weapons or loses its resistance to silvered weapons) must make a DC 14 Wisdom saving throw when they attempt to cross the line. If they fail, they can't cross the warding line while it remains active.",
+				"-With your blood, paint yourself in cloaking symbols that prevent an astirax from detecting you with its Scent Magic ability for 1 hour.",
+				"You can create as many of these effects as you like, suffering the damage each time."
+			],
+			"source": "MidnightLegacyofDarkness",
+			"page": "105/106",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small silver coin"
+			},
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Silver Storm",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 70
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You toss a handful of silver shavings into the air, and as you chant the spell, they transform into a hail of glinting, shining needles that whip forward at tremendous speed. Each creature in a 70-foot cone must make a Dexterity saving throw. A creature takes {@damage 10d4} piercing damage on a failed save, or half as much damage on a successful one.",
+				"If the creature is adversely affected by silver (such as a creature that has vulnerability to silvered weapons or loses its resistance to silvered weapons), it instead takes {@damage 10d8} piercing damage on a failed save, or half as much damage on a successful one."
+			],
+			"source": "MidnightLegacyofDarkness",
+			"page": 106,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a handful of silver shavings worth 2 sp"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, you can increase the size of the cone by 10 feet per slot level above 6th."
+					]
+				}
+			]
+		},
+		{
+			"name": "Silver Wind",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 200
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You summon a swirling cloud of silver dust in a 40-foot-radius sphere centered on a point within range. The sphere spreads around corners, and the dust clings to any creatures within the cloud. Each creature that enters the cloud or starts its turn within the cloud loses invisibility and become visible for the duration of the spell. ",
+				"If a creature that is adversely affected by silver (such as a creature that has vulnerability to silvered weapons or loses its resistance to silvered weapons) enters the cloud or starts its turn within the cloud, it must make a Constitution saving throw. If it fails, it is {@condition stunned}. At the end of each of its turns, the creature can make another Constitution saving throw. On a success, it is no longer {@condition stunned}."
+			],
+			"source": "MidnightLegacyofDarkness",
+			"page": 106,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of powdered silver"
+			}
+		}
+	]
+}
